@@ -1,0 +1,282 @@
+body {
+    background-color: #f5f5f5;
+}
+/*版心部分*/
+.jd_layout {
+    max-width: 640px;  /*设计的就是640px*/
+    min-width: 320px;  /*最小是320px，防止320px以下的设备错乱*/
+    margin: 0 auto;
+}
+
+/*搜索栏*/
+.jd_header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.jd_header_box {
+    max-width: 640px;  /*设计的就是640px*/
+    min-width: 320px;  /*最小是320px，防止320px以下的设备错乱*/
+    margin: 0 auto;
+    height: 40px;
+    background: rgba(201, 21, 35, 0);
+    position: relative;
+}
+.jd_header_box .icon_logo{
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+
+    background-position: 0 -103px;
+}
+.jd_header_box .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.jd_header_box form {
+    padding-left: 70px;
+    padding-right: 50px;
+    width: 100%;
+    height: 40px;
+}
+.jd_header_box .icon_search {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+}
+.jd_header_box input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding-left: 25px;
+}
+
+/*轮播图部分*/
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner ul:first-child {
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+
+}
+.jd_banner ul:first-child li {
+    float: left;
+    width: 10%;
+}
+.jd_banner ul:first-child li a {
+    display: block;
+    width: 100%;
+
+}
+.jd_banner ul:first-child li a img {
+    display: block;
+    width: 100%;
+}
+.jd_banner ul:last-child {
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    margin-left: -59px;
+}
+.jd_banner ul:last-child li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.jd_banner ul:last-child li:first-child {
+    margin-left: 0;
+}
+.jd_banner ul:last-child li.now {
+    background: #fff;
+}
+
+/*导航栏部分*/
+.jd_nav {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.jd_nav ul {
+    width: 100%;
+    padding: 15px 0;
+}
+.jd_nav ul li {
+    float: left;
+    width: 25%;
+}
+.jd_nav ul li a {
+    display: block;
+}
+.jd_nav ul li a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.jd_nav ul li a p {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 5px 0 ;
+}
+
+/*主题商品区*/
+
+.jd_main {
+    padding: 0 5px;
+}
+.jd_main .jd_product {
+    width: 100%;
+    box-shadow: 0 0 1px #ccc;
+    /*min-height: 300px;*/
+    margin-top: 10px;
+    background: #fff;
+}
+.jd_main .jd_product .jd_product_tit {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+.jd_main .jd_product:first-child .jd_product_tit {
+    border-bottom: none;
+}
+.jd_main .jd_product .jd_product_tit h3 {
+    font-weight: normal;
+    padding-left: 18px;
+}
+.jd_main .jd_product .jd_product_tit h3::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 10px;
+
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+}
+.jd_main .jd_product .jd_product_con {
+
+}
+
+/*秒杀部分*/
+.sk_icon {
+    width: 16px;
+    height: 20px;
+    background: url("../images/seckill-icon.png");
+    background-size: 16px 20px;
+    float: left;
+    margin-top: 6px;
+}
+.sk_text {
+    float: left;
+    padding-left: 8px;
+    color: #d8505c;
+}
+.sk_time {
+   float: left;
+    margin-left: 10px;
+}
+.sk_time span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+}
+.sk_time span:nth-child(3n) {
+    width: 3px;
+    background: #fff;
+    color: #333;
+}
+
+.sk_ul{}
+.sk_ul li {
+    float: left;
+    width: 33.333%;
+    margin: 10px 0;
+}
+.sk_ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+
+}
+.sk_ul li:last-child a {
+    border-right: none;
+}
+.sk_ul li a img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.sk_ul li p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+/*.sk_ul li p:first-child   这种方式选择不到p  因为第一个子元素不是p标签*/
+
+.sk_ul li p:nth-last-child(2) {
+    color: #d8505c;
+}
+.sk_ul li p:nth-last-child(1) {
+    /*设置字体样式为横线穿过*/
+    text-decoration: line-through;
+}
+
+
+
+/*具体商品展示部分*/
+
+/*设置公用类样式*/
+/*所有的商品区占50%*/
+.product_advert {
+    width: 50%;
+    display: block;
+}
+.product_advert img {
+    width: 100%;
+    display: block;
+}
+
+/*边框线*/
+.b_left {
+    border-left: 1px solid #ccc;
+}
+.b_right {
+    border-right: 1px solid #ccc;
+}
+.b_bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+

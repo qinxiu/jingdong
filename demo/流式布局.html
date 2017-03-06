@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>流式布局+flex</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 500px;
+            /*父容器百分比布局，display=flex*/
+            display: flex;
+        }
+        .c_left {
+            /*左侧盒子，固定宽高*/
+            width: 200px;
+            height: 500px;
+            background-color: pink;
+        }
+        .c_right {
+            /*右侧盒子flex=1  占据父容器的宽度减去左侧宽度剩余的部分*/
+           flex: 1;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c_left"></div>
+        <div class="c_right">
+        </div>
+    </div>
+</body>
+</html>
